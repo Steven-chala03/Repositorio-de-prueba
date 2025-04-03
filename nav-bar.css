@@ -1,0 +1,30 @@
+.nav-bar{
+    text-decoration: dashed;
+    color: rgba(0, 0, 0, 0.961);
+    background-color: aqua;
+    
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.nav-bar:hover{
+    color: antiquewhite;
+}
+
+@media(max-width: 300px){
+ nav{
+    background: black;
+    flex-direction: column;
+
+}
+.nav-bar{
+    margin: 10px;
+}
+ 
+
+  }

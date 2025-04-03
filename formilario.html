@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario.html</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <br><br>
+    <center>
+<div class="Caja">
+    <h1>Registro de usuario</h1>
+   
+<form action="procesar.php" method="post"></form> 
+<center>
+<label for="name">Nombre</label>
+</center>
+<input type="text" id="Nombre"name="Nombre"required>
+<br><br>
+<center>
+<label for="e-mail">E-mail</label>
+</center>
+<input type="text" id="E-mail" name="E-mail"required>
+<br><br>
+<center>
+<label for="edad">Edad</label>
+</center>
+<input type="number" id="Edad" name="Edad" min="1" max="100" required>
+<br><br>
+<center>
+<label for="password"> Contraseña</label>
+</center>
+<input type="password" id="password" name="password"required>
+<br><br>
+<center>
+<label for="genero">Genero</label>
+</center>
+<select name="genero" id="genero">
+    <option value="masculino">Masculino</option>
+    <option value="femenino">Femenino</option>
+    <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+</select>
+<br><br>
+
+<label for="Hobbies"Hobbies>Hobbies:</label>
+<input type="checkbox" name="Hobbies" id="Musica" value="Musica">
+<label for="Musica">Musica:</label>
+<input type="checkbox" name="Hobbies" id="Lectura" value="Lectura">
+<label for="Lectura">Lectura:</label>
+<input type="checkbox" name="Hobbies" id="Deporte" value="Deporte">
+<label for="Deporte">Deporte:</label>
+<br><br>
+
+<label class="Comen">Comentario</label>
+<br>
+<textarea name="Comentario" id="Comentario" cols="40" rows="4"></textarea>
+<br><br>
+
+<input type="submit" value="Enviar">
+<input type="reset" value="Borrar">
+</div>
+</body>
+</html>
